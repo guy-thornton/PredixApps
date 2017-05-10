@@ -1,0 +1,17 @@
+---
+applications:
+  - name: 212585536-HelloWorld
+    host: 212585536-HelloWorld
+    port: 443
+    memory: 128MB
+    disk_quota: 256MB
+    random-route: true
+    buildpack: python_buildpack
+    command: python run.py
+services:
+  - 212585536-uaa
+env:
+  client_id: 212585536-HelloWorldClientApp
+  base64encodedClientDetails: MjEyNTg1NTM2LUhlbGxvV29ybGRDbGllbnRBcHA6SXNsYW5kVmlldw==
+  
+   
