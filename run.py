@@ -7,11 +7,13 @@ import urllib
 import base64
 import os
 
-CLIENT_ID = "212585536-HelloWorldClientApp"
-UAA_URL = "https://e16766c1-bedf-4422-8e82-4551bbd881f5.predix-uaa.run.aws-usw02-pr.ice.predix.io"
-BASE64ENCODING = 'MjEyNTg1NTM2LUhlbGxvV29ybGRDbGllbnRBcHA6SXNsYW5kVmlldw=='
+#Note the values set for these variables will allow you to run the application locally.
+#Modify these values to point to your UAA Instance information.
+CLIENT_ID = None #" Your Client ID"
+UAA_URL = None #"Your UAA Url"
+BASE64ENCODING = None #'MjEyNTg1NTM2LUhlbGxvV29ybGRDbGllbnRBcHA6SXNsYW5kVmlldw=='
 port = int(os.getenv("PORT", 9099))
-REDIRECT_URI = "http://localhost:"+str(port)+"/callback"
+REDIRECT_URI = None #"http://localhost:"+str(port)+"/callback"
 
 APP_URL = None
 if 'VCAP_SERVICES' in os.environ:
